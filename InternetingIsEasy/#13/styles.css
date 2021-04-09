@@ -74,14 +74,12 @@ body {
     margin-bottom: 20px;
   }
   .form-row input[type="text"], .form-row input[type="email"], .form-row select, .form-row textarea {
-      width: 250px;
-      height: initial;
-    } 
-  {
-    background-color: #FFFFFF;
     width: 250px;
     height: initial;
+
+    background-color: #FFFFFF;
   }
+}
   .form-row lable {
     text-align: right;
     width: 120px;
@@ -106,7 +104,6 @@ body {
     margin-left: 120px;
     width: auto;
   }
-}
 
 .form-row input[type="text"] :invalid, .form-row input[type="email"] :invalid {
   border: 1px solid #D55C5F;
@@ -188,25 +185,3 @@ body {
 .form-row button:active {
   background-color: #407FC7;
 }
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
-
-. {}
