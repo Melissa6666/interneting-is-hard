@@ -1,11 +1,12 @@
 * {
   margin: 0;
   padding: 0;
-  boxing-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-size: 18px;
   line-height: 1.8em;
   color: #5D6063;
@@ -60,7 +61,7 @@ nav li.selected {
 
 nav a:link, nav a:visited {
   color: #888F95;
-  text-deoration: none;
+  text-decoration: none;
 }
 
 nav a:hover, nav a:visited:hoever, nav a:active, nav a:visited:active {
@@ -110,9 +111,7 @@ nav a:hover, nav a:visited:hoever, nav a:active, nav a:visited:active {
   color: #D55C5F;
 }
 
-.section:first-of-type {}
-
-.section p, .section ul, .section ol, .section figure {
+.section:first-of-type, .section p, .section ul, .section ol, .section figure {
   margin-bottom: 1em;
 }
 
@@ -147,7 +146,7 @@ nav a:hover, nav a:visited:hoever, nav a:active, nav a:visited:active {
 @media only screen and (min-width: 580px) {
   .section {
     margin: 4em auto;
-    padding 2.5em 3em;
+    padding: 2.5em 3em;
   }
   .section--gray:first-of-type, .section--gray {
     border: 1px solid #D6D9DC;
@@ -172,21 +171,154 @@ nav a:hover, nav a:visited:hoever, nav a:active, nav a:visited:active {
 }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("Roboto-Light-webfont.woff") format("woff")
+  font-family: 'Roboto';
+  src: url('Roboto-Light-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 300;
 }
 
-. {}
+em, strong {
+  font-synthesis: none;
+}
 
-. {}
+@font-face {
+  font-family: 'Roboto Light Italic';
+  src: url('Roboto-LightItalic-webfont.woff') fromat('woff');
+  font-style: italic;
+  font-weight: 300
+}
 
-. {}
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('Roboto-Bold-webfont.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+}
 
-. {}
+em {
+  font-family: 'Roboto Light Italic', serif;
+  font-style: italic;
+}
 
-. {}
+strong {
+  font-family: 'Roboto Bold', serif;
+  font-weight: bold;
+}
 
-. {}
+.old-style {
+  font-family: 'Sorts Mill Goudy', serif;
+}
+
+.trasitional {
+  font-family: 'Libre Baskerville', serif;
+}
+
+.didot {
+  font-family: 'Rufina', serif;
+}
+
+.slab {
+  font-family: 'Rokkitt', serif;
+}
+
+.fat-face {
+  font-family: 'Alfa Slab One', cursive;
+}
+
+.grotesque {
+  font-family: 'Roboto', sans-serif;
+}
+
+.geometric {
+  font-family: 'Questrial', sans-serif;
+}
+
+.humanist {
+  font-family: 'Lato', sans-serif;
+}
+
+.display {
+  font-family: 'Lobster', cursive;
+}
+
+.monospace {
+  font-family: 'Droid Sans Mono';
+}
+
+
+.never-both p {
+  text-indent: 1em;
+  margin-bottom: 1em;
+}
+
+.paragraph-indent p {
+  text-indent: 1em;
+  margin-bottom: 0;
+}
+
+.paragraph-indent p:first-of-type {
+  text-indent: 0;
+}
+
+.left {
+  text-align: left;
+}
+
+.center {
+  text-align: center;
+}
+
+figcaption {
+  display: none;
+}
+
+@media only screen and (min-width: 900px) {
+  position: relative;
+}
+
+figcaption {
+  display: block;
+
+  font-style: italic;
+  text-align: right;
+  background-color: #FFFFFF;
+
+  position: absolute;
+  left: -220px;
+  width: 200px;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.messy {
+  line-height: 1.2em;
+}
+
+.messy h2 {
+  line-height: .9em;
+}
+
+.messy:last-of-type {
+  line-height: 1.5em;
+}
+
+.messy:last-of-type h2 {
+  margin-bottom: .3em;
+}
+
+.messy .botton:link, .messy .button:visited {
+  margin-top: 0;
+}
+
+@media only screen and (min-width: 580px) {
+  .not-so-managable {
+    max-width: 100%;
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
 
 . {}
 
